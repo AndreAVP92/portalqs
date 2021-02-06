@@ -14,8 +14,13 @@
 }
 
 /* ==== BASE ==== */
-*,::before, ::after {
-    box-sizing: border-box;
+html{
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .mb--10 {
@@ -23,18 +28,22 @@
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--body-font);   
-    overflow-y: auto; 
-    overflow-x: auto;
-    background-image: linear-gradient(to bottom, rgba(248,248, 252,0.6) 0%,rgba(248,248, 252, 0.6) 100%), url('img/logo_03.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    z-index: -1;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);   
+  overflow-y: auto; 
+  overflow-x: auto;
+  background-image: linear-gradient(to bottom, rgba(248,248, 252,0.6) 0%,rgba(248,248, 252, 0.6) 100%), url('img/logo_03.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+}
 
+  .main {
+    margin-top: 50px;
+  } 
+  
   h1{
     margin: 0;
   }
@@ -54,33 +63,24 @@ body{
     max-width: 100%;
     height: auto;
   }
-  /*  ==== GOOGLE SEARCH ====*/
-  table {
-    background-color: var(--first-color-lighten);
-  }
   
-    
+.row {
+  --bs-gutter-x: 10.5rem!important;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
   /*===== DRAG and DROP =====*/
-  .drop, .drop_container{
-    display: grid;
-  }
-  
   .drop{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
   }
 
-  #dropLeft{
-    float: left;
-    width: 50em;
-  }
-  #dropRight{
-    float: right;
-    width: 50em;
-  }
-  
   .drop_container{
     row-gap: 1rem;
     padding: 2rem;
@@ -93,29 +93,18 @@ body{
   }
   
   .drop_card{
-    width: 500px;
-    height: 65px;
     height: 55px;
     justify-content: space-between;
-    padding: .75rem 1.25rem .75rem .75rem;
-    background-color: var(--first-color-lighten);
-    box-shadow: 4px 4px 16px #E1E1E1, -2px -2px 16px #FFF;
+    padding: .75rem 1.25rem 1.25rem .75rem;
+    background-color: var(--first-color-lighten)!important; 
+    box-shadow: 4px 4px 16px #E1E1E1, -2px -2px 16px #FFF!important;
     border-radius: 2.5rem;
     transition: 0.3s ease-out;
     position: relative; 
   }
-
-  .drop_card a{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-  }
   
   .drop_card:hover {
-    background: #F8C471;
+    background: #F8C471!important;
     color: white;
     transform: scale(1.05);
   }
@@ -159,30 +148,3 @@ body{
     color: var(--first-color);
   }
   
-  /* Class name for the chosen item */
-  .sortable-chosen{
-    box-shadow: 8px 8px 32px #E1E1E1;
-  }
-  
-  /* Class name for the dragging item */
-  .sortable-drag{
-    opacity: 0;
-  }
-
-  @media screen and (max-width: 500px) {
-    #dropRight, #dropLeft  {
-      width: 30em;
-      display: contents;
-      position: relative;
-    }
-    .drop_card{
-      width: 420px;
-    }
-
-    .drop{
-      height: 0;
-    }
-    .inputSearch{
-      width: 200px;
-    }
-  }

@@ -2,264 +2,254 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    
+    <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> -->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Portal QServices</title>
-    
 </head>
 <body>
-    <center>
-        <form method=get action="http://www.google.com/search">
-            <table>
-                <tr>
-                    <td>
-                        <a HREF="http://www.google.com/">
-                            <img SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle">
-                        </a>
-                        <input type=text name=q size=31 maxlength=255 value="" class="inputSearch" placeholder="Search...">
-                        <input type=hidden name=hl value=es>
-                        <input type=submit name=btnG value="Búsqueda Google">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </center>
-    <div class="drop" id="dropLeft">
-        <div class="drop_container" id="drop_items">
-            <h4>Institucional</h4>
-            <div class="drop_card">
-                <div class="drop_data">
-                    <img src="img\q.jpg" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Home</h1>
-                        <span class="drop_description">Home Qservices SRL</span>
-                        <a href="https://www.qservices.com.ar/" class="drop_social"></a>
+    <div class="mt-4 px-4">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="drop_container">
+                    <h4>Institucional</h4>
+                    <div class="drop_card mt-2 mb-2">
+                        <div class="drop_data">
+                            <img src="img\q.jpg" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Home</h1>
+                                <span class="drop_description">Home Qservices SRL</span>
+                                <a href="https://www.qservices.com.ar/" class="drop_social"></a>
+                            </div>
+                        </div>             
+                        <span class="drop_ref">Pablo Fiuza</span>
                     </div>
-                </div>             
-                <span class="drop_ref">Pablo Fiuza</span>
-            </div>
-            <h4>Sistema de gestión de calidad (Sharepoint)</h4>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\sharepoint.png" alt="" class="drop_img2">
-                    <div>
-                        <h1 class="drop_name">SGC - Home</h1>
-                        <span class="drop_description">SGC</span>
+                    <h4>Sistema de gestión de calidad (Sharepoint)</h4>
+                    <div class="drop_card mt-2 mb-2">
+                        <div class="drop_data">
+                            <img src="img\sharepoint.png" alt="" class="drop_img2">
+                            <div>
+                                <h1 class="drop_name">SGC - Home</h1>
+                                <span class="drop_description">SGC</span>
+                            </div>
+                        </div>
+                        <a href="http://200.68.126.49:8080/SGC/default.aspx" class="drop_social"></a>
+                        <span class="drop_ref">Ariel Gonzalez</span>
                     </div>
-                </div>
-                <a href="http://200.68.126.49:8080/SGC/default.aspx" class="drop_social"></a>
-                <span class="drop_ref">Ariel Gonzalez</span>
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\sharepoint.png" alt="" class="drop_img2">
-                    <div>
-                        <h1 class="drop_name">Registro de Licencias</h1>
-                        <span class="drop_description">Carga de Licencias planificadas</span>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\sharepoint.png" alt="" class="drop_img2">
+                            <div>
+                                <h1 class="drop_name">Registro de Licencias</h1>
+                                <span class="drop_description">Carga de Licencias planificadas</span>
+                            </div>
+                        </div>
+                        <a href="http://200.68.126.49:8080/SGC/Lists/Registro%20de%20Licencias/AllItems.aspx" class="drop_social"></a>
+                        <span class="drop_ref">Natalia Razzeti</span>      
                     </div>
-                </div>
-                <a href="http://200.68.126.49:8080/SGC/Lists/Registro%20de%20Licencias/AllItems.aspx" class="drop_social"></a>
-                <span class="drop_ref">Natalia Razzeti</span>      
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\sharepoint.png" alt="" class="drop_img2" >
-                    <div>
-                        <h1 class="drop_name">Registro de Vacaciones</h1>
-                        <span class="drop_description">Carga de Vacaciones</span>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\sharepoint.png" alt="" class="drop_img2" >
+                            <div>
+                                <h1 class="drop_name">Registro de Vacaciones</h1>
+                                <span class="drop_description">Carga de Vacaciones</span>
+                            </div>
+                        </div>               
+                        <a href="http://200.68.126.49:8080/SGC/RHU/Lists/Vacaciones%202019/Vacaciones.aspx" class="drop_social"></a>
+                        <span class="drop_ref">Natalia Razzeti</span> 
                     </div>
-                </div>               
-                <a href="http://200.68.126.49:8080/SGC/RHU/Lists/Vacaciones%202019/Vacaciones.aspx" class="drop_social"></a>
-                <span class="drop_ref">Natalia Razzeti</span> 
-            </div>
-            <div class="drop_card">
-                <div class="drop_data">
-                    <img src="img\sharepoint.png" alt="" class="drop_img2">
-                    <div>
-                        <h1 class="drop_name">Procesos de Desarrollo</h1>
-                        <span class="drop_description">Procesos y templates para Desarrollo</span>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\sharepoint.png" alt="" class="drop_img2">
+                            <div>
+                                <h1 class="drop_name">Procesos de Desarrollo</h1>
+                                <span class="drop_description">Procesos y templates para Desarrollo</span>
+                            </div>
+                        </div>
+                        <a href="http://200.68.126.49:8080/SGC/DES/Procedimientos%20DES/Forms/AllItems.aspx" class="drop_social"></a>
+                        <span class="drop_ref">Lucas Markovic</span> 
                     </div>
-                </div>
-                <a href="http://200.68.126.49:8080/SGC/DES/Procedimientos%20DES/Forms/AllItems.aspx" class="drop_social"></a>
-                <span class="drop_ref">Lucas Markovic</span> 
-            </div>
-            <h4>Carga de horas</h4>
-            <div class="drop_card">
-                <div class="drop_data">
-                    <img src="img\clock.jpg" alt="" class="drop_img2">
-                    <div>
-                        <h1 class="drop_name">Qproject - Carga de Horas</h1>
-                        <span class="drop_description">Administración de horas</span>
+                    <h4>Carga de horas</h4>
+                    <div class="drop_card mt-2 mb-2">
+                        <div class="drop_data">
+                            <img src="img\clock.jpg" alt="" class="drop_img2">
+                            <div>
+                                <h1 class="drop_name">Qproject - Carga de Horas</h1>
+                                <span class="drop_description">Administración de horas</span>
+                            </div>
+                        </div>
+                        <a href="http://200.68.126.49/qprojectnetcore/" class="drop_social"></a>
+                        <span class="drop_ref">Lucas Markovic</span> 
                     </div>
-                </div>
-                <a href="http://200.68.126.49/qprojectnetcore/" class="drop_social"></a>
-                <span class="drop_ref">Lucas Markovic</span> 
-            </div>
-            <h4>Herramientas</h4>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\tfs.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">AMS DTV(TFS)</h1>
-                        <span class="drop_description">Documentación de Aplicativos</span>
+                    <h4>Herramientas</h4>
+                    <div class="drop_card mt-2 mb-2">
+                        <div class="drop_data">
+                            <img src="img\tfs.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">AMS DTV(TFS)</h1>
+                                <span class="drop_description">Documentación de Aplicativos</span>
+                            </div>
+                        </div>
+                        <a href="http://artfapp1156:8080/tfs/web/UI/Pages/Scc/Explorer.aspx?pguid=c31cc09f-497b-4285-a127-793c52781596#path=%24%2FQSERVICES%2FDeploy" class="drop_social"></a>
+                        <span class="drop_ref">Lucas Markovic</span> 
                     </div>
-                </div>
-                <a href="http://artfapp1156:8080/tfs/web/UI/Pages/Scc/Explorer.aspx?pguid=c31cc09f-497b-4285-a127-793c52781596#path=%24%2FQSERVICES%2FDeploy" class="drop_social"></a>
-                <span class="drop_ref">Lucas Markovic</span> 
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\jira.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Jira DTV</h1>
-                        <span class="drop_description">Herramienta de Gestión de Incidentes, SR y Requerimientos. Segundo y Tercer nivel</span>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\jira.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Jira DTV</h1>
+                                <span class="drop_description">Herramienta de Gestión de Incidentes, SR y Requerimientos. Segundo y Tercer nivel</span>
+                            </div>
+                        </div>
+                        <a href="https://directvla.jira.com/issues/" class="drop_social"></a>
+                        <span class="drop_ref">Lucas Markovic</span> 
                     </div>
-                </div>
-                <a href="https://directvla.jira.com/issues/" class="drop_social"></a>
-                <span class="drop_ref">Lucas Markovic</span> 
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\clock.jpg" alt="" class="drop_img2">
-                    <div>
-                        <h1 class="drop_name">PPM DTV</h1>
-                        <span class="drop_description">Herramienta de carga de horas en DTV</span>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\clock.jpg" alt="" class="drop_img2">
+                            <div>
+                                <h1 class="drop_name">PPM DTV</h1>
+                                <span class="drop_description">Herramienta de carga de horas en DTV</span>
+                            </div>
+                        </div>
+                        <a href="https://ppm-directv.saas.hpe.com" class="drop_social"></a>
+                        <span class="drop_ref">Lucas Markovic</span> 
                     </div>
-                </div>
-                <a href="https://ppm-directv.saas.hpe.com" class="drop_social"></a>
-                <span class="drop_ref">Lucas Markovic</span> 
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\directv.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Cambio Pass DTV</h1>
-                        <span class="drop_description">Herramienta para cambio de Password de DTV</span>
+                    <div class="drop_card">
+                        <div class="drop_data">
+                            <img src="img\directv.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Cambio Pass DTV</h1>
+                                <span class="drop_description">Herramienta para cambio de Password de DTV</span>
+                            </div>
+                        </div>
+                        <a href="https://sspwdtv3.dtvpan.com/showLogin.cc" class="drop_social"></a>
+                        <span class="drop_ref">Lucas Markovic</span> 
                     </div>
                 </div>
-                <a href="https://sspwdtv3.dtvpan.com/showLogin.cc" class="drop_social"></a>
-                <span class="drop_ref">Lucas Markovic</span> 
             </div>
-        </div>
-    </div>
+            <div class="col d-none" style="width: 150px;">
 
-    <div class="drop" id="dropRight">
-        <div class="drop_container" id="drop_items">           
-            <h4>News</h4>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\clarin.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Clarín</h1>
+            </div>
+            <div class="col">
+                <div class="drop_container" id="drop_items">           
+                    <h4>News</h4>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\clarin.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Clarín</h1>
+                            </div>
+                        </div>
+                        <a href="http://www.clarin.com.ar/" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\laNacion.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">La Nación</h1>
+                            </div>
+                        </div>
+                        <a href="http://www.lanacion.com.ar/" class="drop_social"></a>      
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\infobae.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Infobae</h1>
+                            </div>
+                        </div>
+                        <a href="http://www.infobae.com/" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\ambito.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Ámbito</h1>
+                                <span class="drop_description"></span>
+                            </div>
+                        </div>
+                        <a href="http://www.ambito.com.ar/" class="drop_social"></a>
+                    </div>
+                    <h4>Bancos</h4>
+                    <div class="drop_card mt-2 mb-2">
+                        <div class="drop_data ">
+                            <img src="img\santander.jpg" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Santander Río</h1>
+                            </div>
+                        </div>
+                        <a href="https://www.personas.santanderrio.com.ar/hb/html/login/principal.jsp" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\HSBC.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">HSBC Individuos</h1>
+                            </div>
+                        </div>
+                        <a href="https://www.pcbanking2g.hsbc.com.ar/" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\HSBC.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">HSBC Emp</h1>
+                            </div>
+                        </div>
+                        <a href="https://www.empresas.hsbc.com.ar/" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\bbva.png" alt="" class="drop_img2">
+                            <div>
+                                <h1 class="drop_name">BBVA</h1>
+                            </div>
+                        </div>
+                        <a href="https://www.bbvafrances.com.ar/" class="drop_social"></a>
+                    </div>
+                    <h4>Mail</h4>
+                    <div class="drop_card mt-2 mb-2">
+                        <div class="drop_data">
+                            <img src="img\q.jpg" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">QServices Webmail</h1>
+                            </div>
+                        </div>
+                        <a href="http://www.qservices.com.ar/webmail" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\directv.png" alt="" class="drop_img2">
+                            <div>
+                                <h1 class="drop_name">DirecTV Webmail</h1>
+                            </div>
+                        </div>
+                        <a href="https://owa.dtvpan.com/" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card mb-2">
+                        <div class="drop_data">
+                            <img src="img\hotmail.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Hotmail</h1>
+                            </div>
+                        </div>
+                         <a href="http://www.hotmail.com/" class="drop_social"></a>
+                    </div>
+                    <div class="drop_card">
+                        <div class="drop_data">
+                            <img src="img\gmail.png" alt="" class="drop_img">
+                            <div>
+                                <h1 class="drop_name">Gmail</h1>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/accounts/" class="drop_social"></a>
                     </div>
                 </div>
-                <a href="http://www.clarin.com.ar/" class="drop_social"></a>
             </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\laNacion.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">La Nación</h1>
-                    </div>
-                </div>
-                <a href="http://www.lanacion.com.ar/" class="drop_social"></a>      
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\infobae.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Infobae</h1>
-                    </div>
-                </div>
-                <a href="http://www.infobae.com/" class="drop_social"></a>
-            </div>
-            <div class="drop_card">
-                <div class="drop_data">
-                    <img src="img\ambito.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Ámbito</h1>
-                        <span class="drop_description"></span>
-                    </div>
-                </div>
-                <a href="http://www.ambito.com.ar/" class="drop_social"></a>
-            </div>
-            <h4>Bancos</h4>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\santander.jpg" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Santander Río</h1>
-                    </div>
-                </div>
-                <a href="https://www.personas.santanderrio.com.ar/hb/html/login/principal.jsp" class="drop_social"></a>
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\HSBC.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">HSBC Individuos</h1>
-                    </div>
-                </div>
-                <a href="https://www.pcbanking2g.hsbc.com.ar/" class="drop_social"></a>
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\HSBC.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">HSBC Emp</h1>
-                    </div>
-                </div>
-                <a href="https://www.empresas.hsbc.com.ar/" class="drop_social"></a>
-            </div>
-            <div class="drop_card">
-                <div class="drop_data">
-                    <img src="img\bbva.png" alt="" class="drop_img2">
-                    <div>
-                        <h1 class="drop_name">BBVA</h1>
-                    </div>
-                </div>
-                <a href="https://www.bbvafrances.com.ar/" class="drop_social"></a>
-            </div>
-            <h4>Mail</h4>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\q.jpg" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">QServices Webmail</h1>
-                    </div>
-                </div>
-                <a href="http://www.qservices.com.ar/webmail" class="drop_social"></a>
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\directv.png" alt="" class="drop_img2">
-                    <div>
-                        <h1 class="drop_name">DirecTV Webmail</h1>
-                    </div>
-                </div>
-                <a href="https://owa.dtvpan.com/" class="drop_social"></a>
-            </div>
-            <div class="drop_card mb--10">
-                <div class="drop_data">
-                    <img src="img\hotmail.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Hotmail</h1>
-                    </div>
-                </div>
-                 <a href="http://www.hotmail.com/" class="drop_social"></a>
-            </div>
-            <div class="drop_card">
-                <div class="drop_data">
-                    <img src="img\gmail.png" alt="" class="drop_img">
-                    <div>
-                        <h1 class="drop_name">Gmail</h1>
-                    </div>
-                </div>
-                <a href="https://www.google.com/accounts/" class="drop_social"></a>
-            </div>
+          </div>
         </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
